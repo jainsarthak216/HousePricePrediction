@@ -10,6 +10,13 @@ After creating the model we have to deploy our Linear regression model into web 
 
 For additional , I have add a chatbot in this web application . This chatbot is created using IBM Watson Assistant .
 
+### Deployment :
+To deploy the project on Azure portal, I followed the following documentaion - https://docs.microsoft.com/en-us/azure/app-service/ .
+1. Created a new resource group .
+2. Made and configured a new web app resource by using Azure Web App service .
+3. In the resource deployment center, I set the source as Github and selected the project repository from my Github account.
+4. Finally, I deployed the mentioned Github repository .
+
 ### Tools & Technology
 Technology — Jupyter notebook
 Language — Python
