@@ -1,24 +1,25 @@
-# Azureprojectdeploy
-FRT Azure project
+# Azure project deploy
+## House Price Prediction
 
-The Frontend is built using HTML and CSS and Backend is built using Flask, the main deployment part and model training is done in Azure.
+This project help to find a price for property based on the geographical variables by breaking down past market patterns and value ranges and coming advancements future costs will be anticipated .
 
-Data Dictionary of medical parameters:
+### Overview :
+First of all we have to download dataset from kaggle . Then we have to apply feature engineering into dataset to clean the data , feature scaling , data pre-processing and like many more things . Then we have to divide our dataset into two part , first part says independent feature and dependent feature . In dependent feature we consider price and independent feature consider rest of the column . Then we have to divide dataset into two part, first part train dataset and second part test dataset . Then after we have to apply some regression model to train the data . After that we have test the model and check the accuracy of model .After checking the models I have conclude that the linear regression model is best for this project and the accuracy of the linear regression model is 88% .
 
-age - age in years
-sex - (1 = male; 0 = female)
-cp - chest pain type 0: Typical angina: chest pain related decrease blood supply to the heart 1: Atypical angina: chest pain not related to heart 2: Non-anginal pain: typically esophageal spasms (non heart related) 3: Asymptomatic: chest pain not showing signs of disease
-trestbps - resting blood pressure (in mm Hg on admission to the hospital) anything above 130-140 is typically cause for concern
-chol - serum cholestoral in mg/dl serum = LDL + HDL + .2 * triglycerides above 200 is cause for concern
-fbs - (fasting blood sugar > 120 mg/dl) (1 = true; 0 = false) '>126' mg/dL signals diabetes
-restecg - resting electrocardiographic results 0: Nothing to note 1: ST-T Wave abnormality can range from mild symptoms to severe problems signals non-normal heart beat 2: Possible or definite left ventricular hypertrophy Enlarged heart's main pumping chamber
-thalach - maximum heart rate achieved
-exang - exercise induced angina (1 = yes; 0 = no)
-oldpeak - ST depression induced by exercise relative to rest looks at stress of heart during excercise unhealthy heart will stress more
-slope - the slope of the peak exercise ST segment 0: Upsloping: better heart rate with excercise (uncommon) 1: Flatsloping: minimal change (typical healthy heart) 2: Downslopins: signs of unhealthy heart
-ca - number of major vessels (0-3) colored by flourosopy colored vessel means the doctor can see the blood passing through the more blood movement the better (no clots)
-thal - thalium stress result 1,3: normal 6: fixed defect: used to be defect but ok now 7: reversable defect: no proper blood movement when excercising
-target - have disease or not (1=yes, 0=no) (= the predicted attribute)****
-The app will display 0 for no disease and 1 for any general disease after submitting the form at the bottom of the page.
+After creating the model we have to deploy our Linear regression model into web application . For that purpose I have use python framework Flask . Basically Flask has use to connect Linear regression model with HTML , CSS , Javascript code .
 
-The app is deployed on Azure: http://heartdiseasepred.azurewebsites.net/
+For additional , I have add a chatbot in this web application . This chatbot is created using IBM Watson Assistant .
+
+### Tools & Technology
+Technology — Jupyter notebook
+Language — Python
+
+### Conclusion :
+In this project I have learn about how to load dataset , how to apply feature engineering , how to fit model into dataset , how to check accuracy of model , and like many more things that I have learn doing this project .
+
+## Github Link :
+https://github.com/jainsarthak216/HousePricePrediction
+
+## Web App Link (Deployed on Azure)
+http://houseprice.azurewebsites.net
+
